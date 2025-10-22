@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Page Analyzer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Page Analyzer</h1>
+      <p>Paste a URL or text — get summary, key points, and tags (Gemini)</p>
+    </header>
+
+    <main class="main-grid">
+      <section class="input-panel">
+        <label>URL</label>
+        <input id="urlInput" placeholder="https://example.com/article" />
+        <label>Or paste text</label>
+        <textarea id="textInput" rows="8" placeholder="Paste article text..."></textarea>
+        <button id="analyzeBtn">Analyze</button>
+        <div id="status" class="status"></div>
+      </section>
+
+      <aside class="side-panel" id="sidePanel">
+        <h2 id="title">Title will appear here</h2>
+        <p id="summary">Summary will appear here</p>
+        <h3>Key Points</h3>
+        <ul id="keyPoints"></ul>
+        <h3>Tags</h3>
+        <div id="tags" class="tags"></div>
+        <h4>Raw preview</h4>
+        <pre id="preview" class="preview"></pre>
+      </aside>
+    </main>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
